@@ -1,0 +1,326 @@
+/* Copyright: Shlok Pandey */
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Titillium Web', sans-serif;
+}
+*::selection{
+  background-color: rgb(197, 225, 165);
+}
+html{
+  scroll-behavior: smooth;
+}
+.float{
+  position: fixed;
+  right:0;
+  bottom:0;
+}
+.float a{
+  padding: 10px;
+  border: thin black solid;
+  background-color: red;
+  border-top-left-radius: 15px;
+  text-decoration: none;
+  font-weight: 400;
+  color: white;
+}
+
+.container{
+  margin:0;
+  padding: 0;
+}
+.head{
+  background:url("https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2015/05/saint_george_basin_australia/15411139-1-eng-GB/Saint_George_Basin_Australia.jpg");
+  height:400px;
+  margin: 0;
+  padding: 0;
+  background-attachment: fixed;
+  text-align: center;
+  color:#ffffff;
+}
+.head h1{
+  padding:35px 0px 11px;
+  font-size: 60px;
+  text-shadow: 10px 20px rgba(0,0,0,0.5);
+}
+.head p{
+  font-size: 35px;
+  padding-bottom: 25px;
+}
+/* Copyright: Shlok Pandey */
+.head input{
+  margin-top: 2 0px;
+  border-radius: 10px;
+  border: solid black thin;
+  opacity: 0.5;
+  padding: 2px 20px;
+  height: 15px;
+  width: 15%;
+  transition: 0.5s ease-in-out;
+  margin-left: 30px;
+}
+.head input:hover{
+  opacity: 1;
+  border: solid rgb(51, 210, 238) thin;
+  box-shadow: 0px 0px 40px 5px rgb(178, 235, 242);
+}
+.go{
+  position: relative;
+  top:20px;
+  opacity: 0.5;
+  transition: 1Ss ease-in-out;
+  width: 50px;
+}
+/* Copyright: Shlok Pandey */
+
+.head input:focus{
+  width: 50%;
+  height:25px;
+  opacity: 0.9;
+}
+.head input:focus + span .go{
+  top:26px;
+  opacity: 0.9;
+  width: auto;
+  cursor: pointer;
+}
+
+/* navigation bar */
+.navbar{
+  position: sticky;
+  top:0px;
+  list-style-type: none;
+  padding: 0;
+  /* width:100%; */
+  background: rgb(144, 152, 159);
+  z-index: 1;
+  /* margin: auto; */
+}
+.navbar li{
+  background: rgb(144, 152, 159);
+}
+.navbar li a{
+  color: rgb(224, 224, 224);
+  display: block;
+  font-size: 18px;
+  padding: 20px 70px;
+  text-decoration: none;
+  /* box-sizing: border-box; */
+}
+.navbar a:hover{
+  background: rgb(130, 100, 230);
+  color: #ffffff;
+}
+/* Copyright: Shlok Pandey */
+.active a{
+  background: rgb(251, 119, 114);
+  color: #ffffff;
+}
+
+
+
+/* menu */
+.drop{
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.dropContent{
+  position: absolute;
+  right:0px;
+  top:100%;
+  display: none;
+}
+.dropContent a{
+  display: block;
+  color:white;
+  text-decoration: none;
+  width: 201px;
+  background: gray;
+  padding: 12px 20px;
+  box-sizing: border-box;
+}
+.drop:hover .dropContent{
+  display: block;
+}
+
+.dropContent a:hover {
+  background: rgb(128, 219, 110);
+  box-shadow: 0vw 0vw 1vw rgb(182, 224, 66);
+}
+/* Copyright: Shlok Pandey */
+
+
+
+/* //mid section */
+.mid{
+  padding: 11px;
+  font-size: 16px;
+}
+.mid h1{
+  margin-top: 22px;
+  margin-bottom: 6px;
+}
+.about{
+  padding-bottom: 30px;
+  border-bottom: thin solid rgb(255, 187, 37);
+  text-align: justify;
+}
+
+/* members */
+
+.mem{
+  display: inline-block;
+
+  text-align: center;
+  width:30%;
+  margin-right:10px;
+
+}
+.mem img{
+  width:30%;
+  border-radius: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mem{
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  padding-top:25px;
+  margin-top: 25px;
+  padding-left: 10px;
+  margin-left: 10px;
+  padding-right: 10px;
+  margin-right:10px;
+  /* Copyright: Shlok Pandey */
+}
+/* .members{
+  border-bottom: thin solid rgb(79, 195, 247);
+} */
+
+.mem1:hover{
+  box-shadow: 0px 0px 50px 15px rgba(79, 195, 247,0.5);
+}
+.mem2:hover{
+  box-shadow: 0px 0px 50px 15px rgb(252, 243, 207);
+}
+.mem3:hover{
+  box-shadow: 0px 0px 50px 15px rgb(171, 235, 198);
+}
+.mem4:hover{
+  box-shadow: 0px 0px 50px 15px rgb(255, 171, 145);
+}
+.mem5:hover{
+  box-shadow: 0px 0px 50px 15px rgb(248, 187, 208);
+}
+.mem6:hover{
+  box-shadow: 0px 0px 50px 15px rgb(250, 229, 211);
+}
+
+
+.overlay{
+  background-color: rgba(69, 90, 100, 0.5);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left:0;
+  top:0;
+  display:none;
+  z-index:2;
+  cursor: url("https://img.icons8.com/ios/48/B3E5FC/thor-hammer.png"),auto;
+}
+/* Copyright: Shlok Pandey */
+
+.memcard{
+  position: fixed;
+  z-index: 3;
+  margin: auto;
+  top:15%;
+  right:35%;
+  border-radius: 15px;
+  border:thin solid rgba(79, 195, 247);
+  box-shadow: 0px 0px 50px 7px #ffffff;
+  padding: 15px;
+  width: 30%;
+  height:75%;
+  background: #ffffff;
+  overflow: auto;
+  display:none;
+  cursor: url("https://img.icons8.com/material/48/4CAF50/fidget-spinner.png"), auto;
+
+}
+
+.memcard a{
+  text-decoration: none;
+}
+
+.caption{
+  font-style: italic;
+  font-weight: 300;
+}
+
+/* //social media */
+
+.social{
+  background: url("https://images.pexels.com/photos/681390/pexels-photo-681390.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  margin: -11px;
+  border-bottom: thick solid rgb(212, 225, 87);
+  padding-bottom: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: white;
+  padding: 100px;
+}
+.social h1{
+  font-size: 50px;
+}
+.social a{
+  text-decoration: none;
+  color:white;
+  padding-top: 40px;
+  font-size: 40px;
+}
+.langcover *::selection{
+  background: rgb(248, 187, 208);
+}
+.langcover h1{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.lang img{
+  float: left;
+  position: relative;
+  clear: right;
+  width:10%;
+  height:10%
+}
+.lang h2{
+  padding-bottom: 20px;
+}
+.lang p{
+  margin-left: 200px;
+}
+.lang{
+  padding:20px;
+  text-align: justify;
+}
+.lang1{
+  background: rgb(255, 213, 79);
+}
+.lang2{
+  background: rgb(174, 213, 129);
+}
+.lang3{
+  background: rgb(129, 212, 250);
+}
+.foot{
+  padding:20px 5px;
+  background: rgb(238, 48, 58);
+  color: #ffffff;
+  text-align: center;
+  font-size: 25px;
+  border-top: dashed thick rgb(248, 196, 113);
+}
+/* Copyright: Shlok Pandey */
